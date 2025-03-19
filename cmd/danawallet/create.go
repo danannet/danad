@@ -7,7 +7,7 @@ import (
 
 	"github.com/danannet/danad/cmd/danawallet/libdanawallet"
 	"github.com/danannet/danad/cmd/danawallet/libdanawallet/bip32"
-	"github.com/danannet/danadd/cmd/danawallet/utils"
+	"github.com/danannet/danad/cmd/danawallet/utils"
 	"github.com/pkg/errors"
 
 	"github.com/danannet/danad/cmd/danawallet/keys"

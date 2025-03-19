@@ -4,7 +4,7 @@ import (
 	"github.com/danannet/danad/infrastructure/network/rpcclient"
 	"github.com/danannet/danad/stability-tests/common"
 	"github.com/danannet/danad/util/panics"
-	"github.com/danannet/danadd/util/profiling"
+	"github.com/danannet/danad/util/profiling"
 	"os"
 	"testing"
 )

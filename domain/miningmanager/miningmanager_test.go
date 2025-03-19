@@ -1,7 +1,7 @@
 package miningmanager_test
 
 import (
-	"github.com/danannet/danad/cmd/kaspawallet/libkaspawallet"
+	"github.com/danannet/danad/cmd/danawallet/libdanawallet"
 	"github.com/danannet/danad/domain/consensusreference"
 	"github.com/danannet/danad/domain/miningmanager/model"
 	"github.com/danannet/danad/util"
@@ -885,7 +885,7 @@ func generateNewCoinbase(addressPrefix util.Bech32Prefix, op opType) (*externala
 			ExtraData:       nil,
 		}, nil
 	}
-	_, publicKey, err := libkaspawallet.CreateKeyPair(op == opECDSA)
+	_, publicKey, err := libdanawallet.CreateKeyPair(op == opECDSA)
 	if err != nil {
 		return nil, err
 	}

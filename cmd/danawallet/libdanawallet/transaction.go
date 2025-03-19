@@ -1,8 +1,8 @@
-package libdanaawallet
+package libdanawallet
 
 import (
-	"github.com/danannet/danad/cmd/danaawallet/libdanaawallet/bip32"
-	"github.com/danannet/danad/cmd/danaawallet/libdanaawallet/serialization"
+	"github.com/danannet/danad/cmd/danawallet/libdanawallet/bip32"
+	"github.com/danannet/danad/cmd/danawallet/libdanawallet/serialization"
 	"github.com/danannet/danad/domain/consensus/model/externalapi"
 	"github.com/danannet/danad/domain/consensus/utils/constants"
 	"github.com/danannet/danad/domain/consensus/utils/subnetworks"
