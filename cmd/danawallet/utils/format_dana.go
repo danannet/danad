@@ -11,8 +11,8 @@ import (
 	"github.com/pkg/errors"
 )
 
-// FormatKas takes the amount of sompis as uint64, and returns amount of KAS with 8  decimal places
-func FormatKas(amount uint64) string {
+// FormatDana takes the amount of sompis as uint64, and returns amount of DANA with 8  decimal places
+func FormatDana(amount uint64) string {
 	res := "                   "
 	if amount > 0 {
 		res = fmt.Sprintf("%19.8f", float64(amount)/constants.SompiPerDana)
@@ -20,9 +20,9 @@ func FormatKas(amount uint64) string {
 	return res
 }
 
-// KasToSompi takes in a string representation of the Kas value to convert to Sompi
-func KasToSompi(amount string) (uint64, error) {
-	err := validateKASAmountFormat(amount)
+// DanaToSompi takes in a string representation of the Kas value to convert to Sompi
+func DanaToSompi(amount string) (uint64, error) {
+	err := validateDANAAmountFormat(amount)
 
 	if err != nil {
 		return 0, err
@@ -52,7 +52,7 @@ func KasToSompi(amount string) (uint64, error) {
 	return convertedAmount, err
 }
 
-func validateKASAmountFormat(amount string) error {
+func validateDANAAmountFormat(amount string) error {
 	// Check whether it's an integer, or a float with max 8 digits
 	match, err := regexp.MatchString("^([1-9]\\d{0,11}|0)(\\.\\d{0,8})?$", amount)
 
