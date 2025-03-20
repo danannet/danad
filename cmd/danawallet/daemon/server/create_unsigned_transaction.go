@@ -15,10 +15,10 @@ import (
 )
 
 // The minimal change amount to target in order to avoid large storage mass (see KIP9 for more details).
-// By having at least 10KAS in the change output we make sure that the storage mass charged for change is
-// at most 1000 gram. Generally, if the payment is above 10KAS as well, the resulting storage mass will be
+// By having at least 10DANA in the change output we make sure that the storage mass charged for change is
+// at most 1000 gram. Generally, if the payment is above 10DANA as well, the resulting storage mass will be
 // in the order of magnitude of compute mass and wil not incur additional charges.
-// Additionally, every transaction with send value > ~0.1 KAS should succeed (at most ~99K storage mass for payment
+// Additionally, every transaction with send value > ~0.1 DANA should succeed (at most ~99K storage mass for payment
 // output, thus overall lower than standard mass upper bound which is 100K gram)
 const minChangeTarget = constants.SompiPerDana * 10
 
