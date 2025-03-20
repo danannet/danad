@@ -12,11 +12,11 @@ import (
 
 var (
 	// userAgentName is the user agent name and is used to help identify
-	// ourselves to other kaspa peers.
-	userAgentName = "kaspad"
+	// ourselves to other dana peers.
+	userAgentName = "danad"
 
 	// userAgentVersion is the user agent version and is used to help
-	// identify ourselves to other kaspa peers.
+	// identify ourselves to other dana peers.
 	userAgentVersion = version.Version()
 
 	// defaultServices describes the default services that are supported by
