@@ -214,26 +214,7 @@ var MainnetParams = Params{
 	RPCPort:     "16110",
 	DefaultPort: "16111",
 	DNSSeeds: []string{
-		// This DNS seeder is run by Wolfie
-		"mainnet-dnsseed.kas.pa",
-		// This DNS seeder is run by Denis Mashkevich
-		"mainnet-dnsseed-1.dananet.org",
-		// This DNS seeder is run by Denis Mashkevich
-		"mainnet-dnsseed-2.dananet.org",
-		// This DNS seeder is run by Constantine Bytensky
-		"dnsseed.cbytensky.org",
-		// This DNS seeder is run by Georges Künzli
-		"seeder1.danad.net",
-		// This DNS seeder is run by Georges Künzli
-		"seeder2.danad.net",
-		// This DNS seeder is run by Georges Künzli
-		"seeder3.danad.net",
-		// This DNS seeder is run by Georges Künzli
-		"seeder4.danad.net",
-		// This DNS seeder is run by Tim
-		"danadns.danacalc.net",
-		// This DNS seeder is run by supertypo
-		"n-mainnet.dana.ws",
+		
 	},
 
 	// DAG parameters
